@@ -76,7 +76,7 @@ public class SqlSessionFactoryBuilder {
     try {
       // XMLConfigBuilder:用来解析XML全局配置文件
       // 使用构建者模式
-      XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
+       XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
       // parser.parse()：使用XPATH解析XML配置文件，将配置文件封装为Configuration对象
       // 返回DefaultSqlSessionFactory对象，该对象拥有Configuration对象（封装配置文件信息）
       return build(parser.parse());

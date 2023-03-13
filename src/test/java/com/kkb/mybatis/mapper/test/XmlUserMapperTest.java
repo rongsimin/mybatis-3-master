@@ -41,7 +41,7 @@ public class XmlUserMapperTest {
 	public void testStatement() throws Exception {
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 
-		List<Object> list = sqlSession.selectList("com.kkb.mybatis.mapper.xml.UserMapper.findUserByUsername", "詹哥");
+		List<Object> list = sqlSession.selectList("com.kkb.mybatis.mapper.xml.UserMapper.findUserByUsername", "jack");
 		System.out.println(list);
 		
 	}
